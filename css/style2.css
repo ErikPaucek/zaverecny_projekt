@@ -1,0 +1,245 @@
+*{
+    margin: 0px; 
+}
+
+/*dizajn menu*/
+header{
+    font-family: 'Lucida Sans';
+    font-style: italic;
+}
+
+body{
+    margin-top: 60px;
+    font-style: italic;
+    background-color: rgb(207, 137, 7);
+}
+
+.menu {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    position: fixed; 
+    width: 100%; 
+    top: 0;
+    z-index: 1; 
+}
+
+.menu li{
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: rgba(255, 208, 0, 0.753);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu li a:hover{
+    color: rgb(255, 38, 0);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    color: rgba(255, 208, 0, 0.753);
+    font-size: 30px;
+}
+
+.hamburger:hover{
+    color:rgb(255, 38, 0);
+}
+
+.menu-menu {
+    display: flex;
+}
+
+.menu-menu.responsive {
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    width:100%;
+    top: 60px;
+    left: 0;
+}
+
+@media (max-width: 600px) {
+    .menu-menu li {
+        display: none;
+    }
+
+
+    .hamburger {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+    }
+
+    .menu-menu.responsive li {
+        display: block;
+    }
+}
+
+.logo{
+    padding-left: 30px;
+
+}
+
+/*menu 1*/
+.nadpis{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.mc1{
+    display: flex;
+    justify-content: space-between;
+    min-height: 400px;  
+    margin-bottom: 50px;
+}
+
+.mc1 div {
+    width: 100%; 
+    margin: 50px 20px;
+}
+
+.mc1 img {
+    max-width: 100%;
+    border: 2px solid gray;
+    border-radius: 25%;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.mc1 img:hover {
+    transform: translateY(-10px); 
+}
+
+.mc1 p {
+    width: 100%;
+    padding: 10px;
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: bold; 
+    font-style: italic; 
+}
+
+/*menu2*/
+.mc2{
+    display: flex;
+    justify-content: space-between;
+    min-height: 400px;   
+    margin-bottom: 50px;
+}
+
+.mc2 div {
+    width: 100%; 
+    margin: 50px 100px;
+}
+
+.mc2 img {
+    max-width: 100%;
+    border: 2px solid gray;
+    border-radius: 25%;
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+}
+
+.mc2 img:hover {
+    transform: translateY(-10px); 
+}
+
+.mc2 p {
+    width: 100%;
+    padding: 10px;
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: bold; 
+    font-style: italic; 
+}
+
+/*menu3*/
+.mc3{
+    display: flex;
+    justify-content: space-between;
+    min-height: 400px;  
+    margin-bottom: 50px;
+}
+
+.mc3 div {
+    width: 100%; 
+    margin: 50px 100px;  
+}
+
+.mc3 img {
+    max-width: 100%;
+    border: 2px solid gray;
+    border-radius: 25%;
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+}
+
+.mc3 img:hover {
+    transform: translateY(-10px); 
+}
+
+.mc3 p {
+    width: 100%;
+    padding: 10px;
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: bold; 
+    font-style: italic; 
+}
+
+@media (max-width: 600px) {
+    .mc1, .mc2, .mc3 {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .mc1 img, .mc2 img, .mc3 img {
+        max-width: 50%;    
+    }
+}
+
+/*dizajn footeru*/
+.stlpce {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    min-height: 100px;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    color: orange;
+}
+
+.stlpce a{
+    text-decoration: underline;
+    color: orange;
+}
+
+#text{
+    margin: 20px;
+}
+
+.copy{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .stlpce {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

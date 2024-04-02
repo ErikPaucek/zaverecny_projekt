@@ -1,0 +1,1 @@
+alert("Vyber si z nášho menu")
