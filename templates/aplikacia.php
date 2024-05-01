@@ -1,5 +1,5 @@
 <?php
-include_once "header_footer/header.php";
+include_once "../header_footer/header.php";
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +11,7 @@ include_once "header_footer/header.php";
     <meta name="keywords" content="jedlo, mcdonald, fastfood, informacie">
     <meta name="author" content="Erik Pauček">
     <title>Aplikácia</title>
-    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="../assets/css/style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -32,7 +32,7 @@ include_once "header_footer/header.php";
                 <p class="lnk"><a href="https://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp&hl=sk">Stiahnuť z Google Play</a></p>
                 <p class="lnk"><a href="https://apps.apple.com/sk/app/mcdonalds-sk/id1217507712?l=sk">Stiahnuť z App Store</a></p>
             </div>
-            <div class="obr"><img src="img/app.avif" alt=""></div>
+            <div class="obr"><img src="../assets/img/app.avif" alt=""></div>
         </section>
        
         <!--kontaktovanie - sekcia 3-->
@@ -52,8 +52,8 @@ include_once "header_footer/header.php";
 
     <!-- footer-->
 <?php
-include_once "header_footer/footer.php";
+include_once "../header_footer/footer.php";
 ?>
-    <script src="js/domov.js"></script>
+    <script src="../assets/js/domov.js"></script>
 </body>
 </html>

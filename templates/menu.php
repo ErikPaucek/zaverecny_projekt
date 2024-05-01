@@ -1,5 +1,7 @@
 <?php
-include_once "header_footer/header.php";
+include_once "../header_footer/header.php";
+require_once "../menu-class.php";
+require_once "../db-connection.php";           
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +13,7 @@ include_once "header_footer/header.php";
     <meta name="keywords" content="jedlo, mcdonald, fastfood, obrazky">
     <meta name="author" content="Erik Pauček">
     <title>Galéria</title>
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="../assets/css/style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -20,27 +22,32 @@ include_once "header_footer/header.php";
 
     <!--main-(jadro)-->
     <main>
+    <a href="../create.php" class="plus-button-link">+</a>
+    
         <!--Prvá časť menučka - section-->
         <h3 class="nadpis">Burgre</h3>
-
         <section class="mc1">
+        <?php
+            $burgre = new Menu($conn);
+            $burgre->read();
+            ?>
             <div>
-                <img src="img/chicken.jpg" alt="">
+                <img src="../assets/img/chicken.jpg" alt="">
                 <p>McChicken</p>
             </div>
             
             <div>
-                <img src="img/chs1.jpg" alt="">
+                <img src="../assets/img/chs1.jpg" alt="">
                 <p>Cheeseburger</p>
             </div>
             
             <div>
-                <img src="img/chs2.jpg" alt="">
+                <img src="../assets/img/chs2.jpg" alt="">
                 <p>Double Cheeseburger</p>
             </div>
             
             <div>
-                <img src="img/bigmac.jpg" alt="">
+                <img src="../assets/img/bigmac.jpg" alt="">
                 <p>Big Mac</p>
             </div>
         </section>
@@ -49,12 +56,12 @@ include_once "header_footer/header.php";
         <h3 class="nadpis">Prílohy</h3>
         <section class="mc2">
             <div>
-                <img src="img/salat.jpg" alt="">
+                <img src="../assets/img/salat.jpg" alt="">
                 <p>Šalát</p>
             </div>
 
             <div>
-                <img src="img/hranolky.jpg" alt="">
+                <img src="../assets/img/hranolky.jpg" alt="">
                 <p>Hranolky</p>
             </div>
         </section>
@@ -64,15 +71,15 @@ include_once "header_footer/header.php";
         <h3 class="nadpis">Nápoje</h3>
         <section class="mc3">
             <div>
-                <img src="img/cola.jpg" alt="">
+                <img src="../assets/img/cola.jpg" alt="">
                 <p>Coca-Cola</p>
             </div>
             <div>
-                <img src="img/milkshake.jpg" alt="">
+                <img src="../assets/img/milkshake.jpg" alt="">
                 <p>Milkshake</p>
             </div>
             <div>
-                <img src="img/kava.jpg" alt="">
+                <img src="../assets/img/kava.jpg" alt="">
                 <p>Káva</p>
             </div>
 
@@ -81,9 +88,9 @@ include_once "header_footer/header.php";
 
     <!--zaver - footer-->
 <?php
-include_once "header_footer/footer.php";
+include_once "../header_footer/footer.php";
 ?>
-    <script src="js/menu.js"></script>
-    <script src="js/domov.js"></script>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/domov.js"></script>
 </body>
 </html>
