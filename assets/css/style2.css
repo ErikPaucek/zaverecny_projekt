@@ -268,29 +268,25 @@ body{
 }
 
 .btn {
-   
+    display: flex;
+    justify-content: center;
     text-decoration: none; 
     color: white; 
     border-radius: 4px; 
-    display: inline-block; 
-    margin: 2px; 
-    font-size: 0.875em; 
     text-align: center; 
     background-color: black ;
     font-size: 17px;
     font-weight: bold;
     border-radius: 15px;
     cursor: pointer;
-    border: none;
-}
-
-.btn-sm {
-    margin-left: 55px;
-    padding: 4px; 
+    width: 85px;
+    margin: auto;
 }
 
 .btn-update {
     background-color: #000000; 
+    margin-bottom: 20px;
+    padding: 5px;
 }
 
 .btn-danger {
