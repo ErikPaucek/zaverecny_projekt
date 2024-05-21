@@ -291,6 +291,8 @@ body{
 
 .btn-danger {
     background-color: #000000; 
+    margin-bottom: 20px;
+    padding: 5px;
 }
 
 .btn-update:hover{
