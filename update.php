@@ -13,14 +13,13 @@ if (isset($_POST['update'])) {
     $upload = 'assets/img/' . $obrazok;
 
 
-    if (move_uploaded_file($_FILES['obrazok']['tmp_name'], $upload)) {
-        $menu = new Menu($conn);
-        $menu->update($id, $obrazok, $nazov, $popis, $cena);
-        header('Location: templates/menu.php');
+if (move_uploaded_file($_FILES['obrazok']['tmp_name'], $upload)) {
+    $menu = new Menu($conn);
+    $menu->update($id, $obrazok, $nazov, $popis, $cena);
+    header('Location: templates/menu.php');
 }
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">

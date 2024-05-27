@@ -1,5 +1,9 @@
 <?php
 include_once "../header_footer/header.php";
+session_start();
+if (!isset($_SESSION["username"])){
+    header("Location: ../login.php");
+}
 ?>
 
 

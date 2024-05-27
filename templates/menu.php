@@ -1,7 +1,11 @@
 <?php
 include_once "../header_footer/header.php";
 require_once "../menu-class.php";
-require_once "../db-connection.php";           
+require_once "../db-connection.php";    
+session_start();
+if (!isset($_SESSION["username"])){
+    header("Location: ../login.php");
+}       
 ?>
 
 <!DOCTYPE html>

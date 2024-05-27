@@ -11,6 +11,7 @@
                     <li><a href="menu.php">Menu</a></li>
                     <li><a href="aplikacia.php" >Aplikácia</a></li>
                     <li><a href="kontakt.php" >Kontakt</a></li>
+                    <li><a href="../logout.php" >Odhlásiť</a></li>
                 
                 </ul>
                 <a class="hamburger" id="hamburger">
