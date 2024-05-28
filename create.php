@@ -11,13 +11,13 @@ if (isset($_POST['submit'])) {
     $upload = 'assets/img/' . $obrazok;
 
 
-    if (move_uploaded_file($_FILES['obrazok']['tmp_name'], $upload)) {
-        $menu = new Menu($conn);
-        $menu->create($upload, $nazov, $popis, $cena, $typ);
+if (move_uploaded_file($_FILES['obrazok']['tmp_name'], $upload)) {
+    $menu = new Menu($conn);
+    $menu->create($upload, $nazov, $popis, $cena, $typ);
         header('Location: templates/menu.php');
-    } else {
-        echo "Chyba pri nahrávaní obrázka.";
-    }
+} else {
+    echo "Chyba pri nahrávaní obrázka.";
+}
 }
 
 ?>

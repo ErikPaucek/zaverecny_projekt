@@ -2,6 +2,9 @@
 require_once 'db-connection.php';
 require_once 'login-class.php';
 session_start();
+if (!isset($_SESSION["username"])){
+    header("Location: login.php");
+}
 ?>
 
 <!DOCTYPE html>

@@ -36,9 +36,9 @@ public function verifyLogin($username, $password) {
             echo 'Zlé heslo';
         }
         return $isPasswordCorrect;
-    } else {
+    }else {
         echo 'Uzivatel neexistuje';
-        return false;
+    return false;
     }
 }
 
